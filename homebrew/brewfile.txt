@@ -16,6 +16,7 @@ gcc
 gist
 git
 grc
+httpie
 htop-osx
 hub
 imagemagick

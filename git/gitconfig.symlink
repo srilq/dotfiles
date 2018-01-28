@@ -1,11 +1,13 @@
 [user]
   email = git@srilq.email
   name = Stef J
-[hub]
-  protocol = https
 [alias]
   co = checkout
   st = status -sb
+  diff = diff --patch-with-stat --color-words
+  log = log --graph --decorate --pretty=oneline --abbrev-commit -5
+  long = log --graph --decorate --pretty=oneline --abbrev-commit
+  push = push --follow-tags
   wtf = !$ZSH/bin/git-wtf
 [color]
   diff = auto

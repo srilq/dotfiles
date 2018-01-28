@@ -78,8 +78,6 @@
     hideHighlightOnSelectedWord: true
     showInStatusBar: false
   linter: {}
-  "linter-eslint":
-    disableWhenNoEslintConfig: false
   "linter-js-standard":
     checkStyleDevDependencies: true
     lintMarkdownFiles: true

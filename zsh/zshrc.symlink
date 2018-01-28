@@ -19,8 +19,8 @@ export LC_ALL="en_GB.UTF-8"
 export TERM=screen-256color
 
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/src/dotfiles
-export DOTFILES=$HOME/src/dotfiles
+export ZSH=$HOME/.dotfiles
+export DOTFILES=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=$HOME/src

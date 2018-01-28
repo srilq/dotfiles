@@ -1,0 +1,13 @@
+electron
+flash-player
+gimp
+google-chrome
+google-drive
+graphviz
+obs
+python3
+skype
+slack
+soundflower
+virtualbox
+vlc

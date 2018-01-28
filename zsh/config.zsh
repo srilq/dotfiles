@@ -1,11 +1,11 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-fpath=($ZSH/functions $fpath)
+fpath=($ZSH/zsh/functions $fpath)
 
-autoload -U $ZSH/functions/*(:t)
+autoload -U $ZSH/zsh/functions/*(:t)
 
-HISTFILE=~/.zsh_history
+HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 

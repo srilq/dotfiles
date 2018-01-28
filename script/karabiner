@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+if [ "$(uname -s)" != "Darwin" ]; then
+  echo "Exiting: we are not a mac"
+  exit 1
+fi
+
+DMG_PATH=karabiner/bundle/karabiner-elements.dmg
+
+mkdir -p karabiner/bundle
+curl -L https://pqrs.org/latest/karabiner-elements-latest.dmg \
+  >  $DMG_PATH
+
+if [ -e $DMG_PATH ]; then
+  echo "Opening karabiner... $DMG_PATH"
+  open $DMG_PATH
+else
+  echo "Karabiner download failed ?"
+  echo "Download karabiner here: https://pqrs.org/latest/karabiner-elements-latest.dmg"
+fi

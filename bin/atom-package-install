@@ -10,4 +10,6 @@
 
 set -e
 
-apm install --packages-file ~/.dotfiles/atom.symlink/packages.txt
+apm install --production --compatible --packages-file $HOME/.dotfiles/atom.symlink/packages.txt
+
+apm dedupe

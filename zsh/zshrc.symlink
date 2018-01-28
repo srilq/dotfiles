@@ -1,50 +1,61 @@
+# if this ever breaks run "$ brew --prefix <toolname>"
+export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/$USER/.config/base16-shell"
+export PATH="$PATH:/Users/$USER/src/dotfiles/bin"
+export PATH="$PATH:/Users/$USER/.config/base16-shell"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
+
+# man pages
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANPATH="/usr/local/opt/gnu-tar/libexec/gnuman:$MANPATH"
+
+# start zle
+zmodload zsh/zle
+
+# utf-8 & screen
+export LC_ALL="en_GB.UTF-8"
+export TERM=screen-256color
+
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+export ZSH=$HOME/src/dotfiles
+export DOTFILES=$HOME/src/dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=$HOME/src
 
-# Stash your environment variables in ~/.localrc. This means they'll stay out
-# of your main dotfiles repository (which may be public, like this one), but
-# you'll have access to them in your scripts.
-if [[ -a ~/.localrc ]]
-then
-  source ~/.localrc
+# source every .zsh file in this rep
+for config_file ($ZSH/**/*.zsh) source $config_file
+
+# base-16
+BASE16_SHELL="$HOME/.config/base16-shell/scripts/base16-eighties.sh"
+if [ -s $BASE16_SHELL ]; then
+  source $BASE16_SHELL
 fi
 
-# all of our zsh files
-typeset -U config_files
-config_files=($ZSH/**/*.zsh)
-
-# load the path files
-for file in ${(M)config_files:#*/path.zsh}
-do
-  source $file
-done
-
-# load everything but the path and completion files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
-do
-  source $file
-done
+antigen bundle marzocchi/zsh-notify
+antigen bundle zsh-users/fizsh
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-syntax-highlighting
+# load autosuggest as last
+antigen bundle tarruda/zsh-autosuggestions
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
 compinit
+source "$ZSH/mosh/completion.sh"
 
-# load every completion after autocomplete loads
-for file in ${(M)config_files:#*/completion.zsh}
-do
-  source $file
-done
+# editor
+export VISUAL="vim"
+export EDITOR="atom"
+export GIT_EDITOR="vim"
 
-unset config_files
+# default programs
+export GHI_PAGER=less
 
-# Better history
-# Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
+eval $(thefuck --alias)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

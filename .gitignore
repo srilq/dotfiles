@@ -1,4 +1,8 @@
+.DS_Store
+.netrwhist
+npm-debug.log
 atom.symlink/.apm
+atom.symlink/.gitignore
 atom.symlink/.node-gyp
 atom.symlink/.storage
 atom.symlink/blob-store
@@ -8,5 +12,6 @@ atom.symlink/storage
 atom.symlink/themes
 atom.symlink/blob-store
 atom.symlink/recovery
-
-git/gitconfig.local.symlink
+atom.symlink/markdown-themeable-pdf
+atom.symlink/projects.cson
+atom.symlink/projects.cson.temp-backup

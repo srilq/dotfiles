@@ -15,3 +15,4 @@ atom.symlink/recovery
 atom.symlink/markdown-themeable-pdf
 atom.symlink/projects.cson
 atom.symlink/projects.cson.temp-backup
+atom.symlink/split-diff

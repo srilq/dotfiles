@@ -6,6 +6,8 @@ alias l="gls -lAhF --color --group-directories-first"
 alias reload!='. ~/.zshrc'
 alias cls='clear'
 alias flush="dscacheutil -flushcache"
+alias sourceenv="source <(cat .env | sed 's/^/export /')"
+alias sourcenv="sourceenv"
 
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"

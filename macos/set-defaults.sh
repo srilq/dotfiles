@@ -7,7 +7,7 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
-defaults write -g ApplePressAndHoldEnabled -bool false # key repeat
+defaults write -g ApplePressAndHoldEnabled -bool true
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1 # Use AirDrop over every interface
 defaults write com.apple.Finder FXPreferredViewStyle clmv # use columns view
 chflags nohidden ~/Library

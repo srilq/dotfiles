@@ -1,6 +1,6 @@
 [user]
-  email = stef.jones@condenastint.com
-  name = Stef Jones
+  email = git@srilq.email
+  name = Stef
 [alias]
   co = checkout
   st = status -sb

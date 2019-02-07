@@ -9,6 +9,9 @@
   long = log --graph --decorate --pretty=oneline --abbrev-commit
   push = push --follow-tags
   wtf = !$ZSH/bin/git-wtf
+  ci = ci-status -v
+  pr = pull-request
+  o = browse
 [color]
   diff = auto
   status = auto

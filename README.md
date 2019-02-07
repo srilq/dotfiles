@@ -18,8 +18,6 @@ script/setup
 
 # Set mac defaults
 set-defaults
-# Install Atom
-script/atom
 # Install Karabiner (requires user input)
 script/karabiner
 ```

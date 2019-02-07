@@ -49,7 +49,7 @@ source "$ZSH/mosh/completion.sh"
 
 # editor
 export VISUAL="vim"
-export EDITOR="atom"
+export EDITOR="code"
 export GIT_EDITOR="vim"
 
 # default programs

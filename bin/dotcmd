@@ -64,6 +64,5 @@ cat "$ZSH"/homebrew/brewfile.txt | xargs -n1 brew install
 # cat "$ZSH"/homebrew/caskfile.txt | xargs -n1 brew cask install
 
 which nvm > /dev/null || install_nvm
-nvm install --lts
-npm install -g npm
+nvm install --lts --latest-npm
 cat "$ZSH"/npm/packagefile.txt | xargs -n1 npm install -g

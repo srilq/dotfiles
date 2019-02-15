@@ -12,7 +12,6 @@ exiftool
 findutils
 freetype
 gawk
-gcc
 gist
 git
 grc

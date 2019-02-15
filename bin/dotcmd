@@ -54,6 +54,10 @@ install_nvm() {
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 }
 
+install_yarn() {
+	brew install yarn --ignore-dependencies
+}
+
 export ZSH=$HOME/.dotfiles
 
 which brew > /dev/null || install_homebrew
@@ -66,3 +70,5 @@ cat "$ZSH"/homebrew/brewfile.txt | xargs -n1 brew install
 which nvm > /dev/null || install_nvm
 nvm install --lts --latest-npm
 cat "$ZSH"/npm/packagefile.txt | xargs -n1 npm install -g
+
+which yarn > /dev/null || install_yarn

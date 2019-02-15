@@ -24,7 +24,6 @@ mdp
 moreutils
 mosh
 openssl
-python
 rbenv
 redis
 rename
@@ -36,6 +35,5 @@ tree
 vifm
 vim
 wget
-yarn
 youtube-dl
 zsh

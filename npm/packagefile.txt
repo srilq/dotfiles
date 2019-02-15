@@ -1,10 +1,5 @@
-cipm
-dat
 eslint_d
-grunt
-gulp
 httpster
-less
 npm
 npx
 standard

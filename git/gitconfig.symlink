@@ -12,6 +12,9 @@
   ci = ci-status -v
   pr = pull-request
   o = browse
+  yolo = push --no-verify
+  fr = push --force-with-lease
+  frodo = push --force-with-lease --no-verify
 [color]
   diff = auto
   status = auto

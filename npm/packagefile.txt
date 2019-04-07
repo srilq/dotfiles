@@ -1,7 +1,6 @@
 eslint_d
 httpster
 npm
-npx
 standard
 typescript
 vmd

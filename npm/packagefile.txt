@@ -5,3 +5,4 @@ standard
 typescript
 vmd
 watchify
+tldr

@@ -44,7 +44,7 @@ antigen bundle tarruda/zsh-autosuggestions
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
-compinit
+compinit -u
 source "$ZSH/mosh/completion.sh"
 
 # editor

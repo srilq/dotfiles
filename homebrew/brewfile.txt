@@ -14,6 +14,7 @@ freetype
 gawk
 gist
 git
+graphicsmagick
 grc
 httpie
 htop-osx

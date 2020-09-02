@@ -20,7 +20,6 @@ export TERM=screen-256color
 
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
-export DOTFILES=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=$HOME/src
@@ -37,7 +36,6 @@ fi
 antigen bundle marzocchi/zsh-notify
 antigen bundle zsh-users/fizsh
 antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-syntax-highlighting
 # load autosuggest as last
 antigen bundle tarruda/zsh-autosuggestions
@@ -58,4 +56,7 @@ export GHI_PAGER=less
 eval $(thefuck --alias)
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
+
+# added by travis gem
+[ -f /Users/sjones/.travis/travis.sh ] && source /Users/sjones/.travis/travis.sh

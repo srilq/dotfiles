@@ -53,7 +53,5 @@ export GIT_EDITOR="vim"
 # default programs
 export GHI_PAGER=less
 
-eval $(thefuck --alias)
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use  # This loads nvm

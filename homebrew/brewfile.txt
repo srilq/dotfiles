@@ -30,7 +30,6 @@ redis
 rename
 spaceman-diff
 terminal-notifier
-thefuck
 tor
 tree
 vifm

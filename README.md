@@ -18,8 +18,6 @@ script/setup
 
 # Set mac defaults
 set-defaults
-# Install Karabiner (requires user input)
-script/karabiner
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.

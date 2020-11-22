@@ -132,7 +132,6 @@ install_dotfiles () {
   done
 
   mkdir -p $HOME/.config
-  link_file $DOTFILES_ROOT/karabiner $HOME/.config/karabiner
 }
 
 setup_gitconfig

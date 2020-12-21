@@ -1,9 +1,6 @@
 ack
-automake
 awscli
 bash
-bsdmake
-clib
 cmake
 certbot
 coreutils
@@ -12,17 +9,12 @@ exiftool
 findutils
 freetype
 gawk
-gist
 git
 graphicsmagick
 grc
-httpie
-htop-osx
 hub
 imagemagick
-jq
 mdp
-moreutils
 mosh
 openssl
 rbenv
@@ -30,9 +22,7 @@ redis
 rename
 spaceman-diff
 terminal-notifier
-tor
 tree
-vifm
 vim
 wget
 youtube-dl

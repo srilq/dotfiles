@@ -1,8 +1,1 @@
-eslint_d
-httpster
-npm
-standard
-typescript
-vmd
-watchify
-tldr
+npm-merge-driver

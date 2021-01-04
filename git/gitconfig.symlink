@@ -26,6 +26,8 @@
   autocorrect = 5
 [push]
   default = current
+[pull]
+  rebase = false
 [credential]
   helper = osxkeychain
 [filter "lfs"]

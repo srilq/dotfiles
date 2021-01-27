@@ -43,5 +43,5 @@ brew update && brew upgrade
 cat "$ZSH"/homebrew/brewfile.txt | xargs -n1 brew install
 
 which nvm > /dev/null || install_nvm
-nvm install --lts --latest-npm
+nvm install --lts
 cat "$ZSH"/npm/packagefile.txt | xargs -n1 npm install -g

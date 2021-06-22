@@ -12,7 +12,6 @@ gawk
 git
 graphicsmagick
 grc
-hub
 imagemagick
 mdp
 mosh
